@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Amit Naik</title>
+    <link>https://amitpnk.github.io/tags/</link>
+    <description>Recent content in Tags on Amit Naik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 26 Nov 2018 15:37:58 +0100</lastBuildDate>
+    
+	<atom:link href="https://amitpnk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aws</title>
+      <link>https://amitpnk.github.io/tags/aws/</link>
+      <pubDate>Mon, 26 Nov 2018 15:37:58 +0100</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cli</title>
+      <link>https://amitpnk.github.io/tags/cli/</link>
+      <pubDate>Mon, 26 Nov 2018 15:37:58 +0100</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dot</title>
+      <link>https://amitpnk.github.io/tags/dot/</link>
+      <pubDate>Wed, 21 Nov 2018 06:34:16 +0100</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/dot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://amitpnk.github.io/tags/go/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://amitpnk.github.io/tags/golang/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphviz</title>
+      <link>https://amitpnk.github.io/tags/graphviz/</link>
+      <pubDate>Wed, 21 Nov 2018 06:34:16 +0100</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/graphviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://amitpnk.github.io/tags/java/</link>
+      <pubDate>Sun, 18 Nov 2018 05:03:04 +0530</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://amitpnk.github.io/tags/projects/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://amitpnk.github.io/tags/rust/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://amitpnk.github.io/tags/spring/</link>
+      <pubDate>Sun, 18 Nov 2018 05:03:04 +0530</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring Boot</title>
+      <link>https://amitpnk.github.io/tags/spring-boot/</link>
+      <pubDate>Sun, 18 Nov 2018 05:03:04 +0530</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/spring-boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring Boot 2</title>
+      <link>https://amitpnk.github.io/tags/spring-boot-2/</link>
+      <pubDate>Sun, 18 Nov 2018 05:03:04 +0530</pubDate>
+      
+      <guid>https://amitpnk.github.io/tags/spring-boot-2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
