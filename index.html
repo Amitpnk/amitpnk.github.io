@@ -35,9 +35,18 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script type="text/javascript">
+    function playMusic() {
+      document.getElementById("myAudio").play();
+    }
+  </script>
 </head>
 
-<body>
+<body onload="playMusic()">
+
+  <audio id="myAudio" controls loop autoplay hidden="false">
+    <source src="Music/calmpiano.ogg" type="audio/ogg">
+  </audio>
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -62,10 +71,15 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Amit Naik</h1>
-    <br>  <h6>Day you stop learning, you will stop growing in your life.</h6>
+      <br>
+      <h6>Day you stop learning, you will stop growing in your life. <br> Keep learning, Keep growing</h6>
       <p>I'm <span class="typed" data-typed-items="Team leader, Full-stack developer, .Net developer, 
         React developer, Blogger, Trainer, Biker"></span></p>
-      
+      <div class="social-links">
+        <a href="http://localhost:3000" class="music"><i class="bx bx-music"></i>
+          <h6> Enjoy music while browsing</h6>
+        </a>
+      </div>
       <div class="social-links">
         <a href="https://github.com/Amitpnk" class="github"><i class="bx bxl-github"></i></a>
         <a href="mailto:amit.naik8103@gmail.com" class="envelope"><i class="bx bxs-envelope"></i></a>
@@ -135,7 +149,7 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-         <p>Below are some skills</p>
+          <p>Below are some skills</p>
         </div>
 
         <div class="row skills-content">
@@ -207,7 +221,8 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Technical Lead | Full Stack Developer | Design pattern, Asp.net Core ,APIs, C#, Sqlserver, React, Angular, MSBI, Webcomponent</p>
+          <p>Technical Lead | Full Stack Developer | Design pattern, Asp.net Core ,APIs, C#, Sqlserver, React, Angular,
+            MSBI, Webcomponent</p>
         </div>
 
         <div class="row">
@@ -246,31 +261,52 @@
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4> <a href="https://globalsolution.societegenerale.com/">Societe General, Bengaluru, India</a> </h4>
-              <h5>2017 - Present</h5>
-              <p> <em> Key Technologies - React, Preact, Webcomponent, ASP.NET Core API, SQL Server, Agile/Scrum</em>
+              <h4> <a href="https://globalsolution.societegenerale.com/">Societe General, India</a> </h4>
+              <h5>May 2017 - Present</h5>
+              <p> <em> Key Technologies - React, Preact, Webcomponent, ASP.NET Core API, SQL Server, NUnit,
+                  Agile/Scrum</em>
               </p>
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production
+                <li>Lead in the design, development, and implementation of the project and production
                   communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
-                  project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
+                <li>Managed up to 5 projects or tasks at a given time</li>
+                <li>Training the assessment of all graphic materials in order to ensure quality and accuracy of the
                   design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
-                  advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
+              <h4> <a href="https://www.infosysbpm.com">Infosys, India</a> </h4>
+
+              <h5>Aug 2014 – May 2017</h5>
+              <p> <em>Key Technologies - Visual Studio 2013(C#, ASP.NET MVC), AngularJS, HTML, CSS, SQL Server, SSIS,
+                  Agile/Scrum</em>
+
+                <ul>
+                  <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
+                    advertisements).</li>
+                  <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
+                    project. </li>
+                  <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                  <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                  <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+              <h4> <a href="https://www.chimeratechnologies.com/">Chimera Technologies (P) Ltd,India</a> </h4>
+
+              <h5>Mar 2013 – Jun 2014</h5>
+              <p> <em>Key Technologies - Visual Studio 2013(C#, ASP.NET MVC), AngularJS, HTML, CSS, SQL Server, SSIS,
+                  Agile/Scrum</em>
+
+                <ul>
+                  <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
+                    advertisements).</li>
+                  <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
+                    project. </li>
+                  <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                  <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                  <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                </ul>
             </div>
           </div>
         </div>
