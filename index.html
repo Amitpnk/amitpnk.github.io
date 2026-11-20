@@ -12,7 +12,7 @@
     content="Amit Naik, Staff Engineer, CBA, CommBank, Generative AI, Agentic AI, RAG, LLM, .NET, Azure, AWS, Microservices, Trainer">
   <meta property="og:title" content="Amit Naik · Staff Engineer">
   <meta property="og:description" content="Building GenAI and agentic AI systems. Staff Engineer at CBA. Trainer and course author.">
-  <meta property="og:image" content="https://amitpnk.github.io/assets/img/hero-bg.jpg">
+  <meta property="og:image" content="https://amitpnk.github.io/assets/img/Slides/bike-1.jpg">
   <meta property="og:url" content="https://amitpnk.github.io/">
   <meta name="theme-color" content="#000000">
 
@@ -69,7 +69,14 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="hero-photo" role="img" aria-label="Amit Naik with his motorcycle"></div>
+    <!-- Hero slideshow: to add a photo, copy a line below and change the image path.
+         "background-position" controls which part of the photo stays in view (e.g. 30% center, right center).
+         All slideshow photos live in assets/img/Slides/ -->
+    <div class="hero-slides" aria-hidden="true">
+      <div class="hero-photo active" style="background-image:url('assets/img/Slides/bike-1.jpg'); background-position:38% center"></div>
+      <div class="hero-photo" style="background-image:url('assets/img/Slides/bike-2.jpg'); background-position:30% center"></div>
+      <div class="hero-photo" style="background-image:url('assets/img/Slides/lake-1.jpg'); background-position:85% center"></div>
+    </div>
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <span class="hero-tag">Staff Engineer · Commonwealth Bank</span>
       <h1>Amit Naik</h1>
@@ -721,6 +728,20 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Hero slideshow: switches photo every 6 seconds -->
+  <script>
+    (function () {
+      var slides = document.querySelectorAll('#hero .hero-photo');
+      if (slides.length < 2) return;
+      var i = 0;
+      setInterval(function () {
+        slides[i].classList.remove('active');
+        i = (i + 1) % slides.length;
+        slides[i].classList.add('active');
+      }, 6000);
+    })();
+  </script>
 
 </body>
 

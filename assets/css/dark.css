@@ -117,17 +117,40 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-#hero .hero-photo {
+/* Slideshow container: holds the photos and the fade-to-black mask */
+#hero .hero-slides {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   width: 68%;
-  background: url("../img/hero-bg.jpg") 38% center / cover no-repeat;
-  filter: grayscale(1) contrast(1.15) brightness(.72);
+  overflow: hidden;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .55) 22%, #000 48%);
   mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .55) 22%, #000 48%);
   animation: heroFade 1.6s ease-out both;
+}
+
+#hero .hero-photo {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(1) contrast(1.15) brightness(.72);
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity 1.8s ease-in-out, transform 8s ease-out;
+}
+
+#hero .hero-photo.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #hero .hero-photo {
+    transition: opacity .4s;
+    transform: none;
+  }
 }
 
 /* Soft vignette so the bottom and right edges melt into black */
@@ -278,11 +301,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
 
-  #hero .hero-photo {
+  #hero .hero-slides {
     width: 100%;
-    background-position: 40% center;
     -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, .5) 55%, transparent 100%);
     mask-image: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, .5) 55%, transparent 100%);
+  }
+
+  #hero .hero-photo {
     filter: grayscale(1) contrast(1.1) brightness(.45);
   }
 
