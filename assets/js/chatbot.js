@@ -203,20 +203,84 @@
     });
   }
 
+  // Which chat button to show:
+  //   'avatar'  = cartoon Amit who waves "Hi!" and puts on a helmet to ride across the button
+  //   'biker'   = robot in a motorcycle helmet that rides across the button
+  //   'classic' = the plain robot with an antenna
+  var ICON_STYLE = 'biker';
+
+  var BIKE =
+    '<g class="cb-bike">' +
+      '<line x1="-6" y1="44" x2="4" y2="44" class="cb-speed"/><line x1="-10" y1="50" x2="2" y2="50" class="cb-speed"/><line x1="-4" y1="56" x2="6" y2="56" class="cb-speed"/>' +
+      '<g class="cb-wheel"><circle cx="16" cy="55" r="7"/><line x1="16" y1="48" x2="16" y2="62"/><line x1="9" y1="55" x2="23" y2="55"/></g>' +
+      '<g class="cb-wheel"><circle cx="48" cy="55" r="7"/><line x1="48" y1="48" x2="48" y2="62"/><line x1="41" y1="55" x2="55" y2="55"/></g>' +
+      '<path d="M16 55 L26 45 L42 45 L48 55" class="cb-frame"/>' +
+      '<path d="M42 45 L45 37 L50 36" class="cb-frame"/>' +
+      '<rect x="24" y="39" width="16" height="7" rx="3.5" class="cb-tank"/>' +
+    '</g>';
+
+  var ZZZ = '<g class="cb-zzz"><text x="50" y="12">z</text><text x="50" y="12">z</text><text x="50" y="12">Z</text></g>';
+
+  var ROBOT_FACE =
+    '<line x1="32" y1="14" x2="32" y2="6" class="cb-antenna"/>' +
+    '<circle cx="32" cy="6" r="4" class="cb-bulb"/>' +
+    '<rect x="8" y="14" width="48" height="40" rx="14" class="cb-head"/>' +
+    '<rect x="3" y="28" width="6" height="12" rx="3" class="cb-ear"/>' +
+    '<rect x="55" y="28" width="6" height="12" rx="3" class="cb-ear"/>' +
+    '<g class="cb-look"><g class="cb-eyes"><circle cx="23" cy="31" r="5"/><circle cx="41" cy="31" r="5"/></g></g>' +
+    '<path d="M18 31 Q23 35 28 31 M36 31 Q41 35 46 31" class="cb-sleep-eyes"/>' +
+    '<circle cx="32" cy="44" r="3.5" class="cb-o"/>' + ZZZ +
+    '<circle cx="16" cy="41" r="3" class="cb-cheek"/><circle cx="48" cy="41" r="3" class="cb-cheek"/>' +
+    '<path d="M24 42 Q32 49 40 42" class="cb-mouth"/>' +
+    '<g class="cb-helmet">' +
+      '<path d="M5 25 Q5 3 32 3 Q59 3 59 25 Z" class="cb-shell"/>' +
+      '<path d="M29 3.2 L35 3.2 L35 22 L29 22 Z" class="cb-stripe"/>' +
+      '<rect x="3" y="21" width="58" height="5" rx="2.5" class="cb-visor"/>' +
+    '</g>';
+
+  // Cartoon Amit, based on the profile photo: swept-up black hair, light stubble, beige shirt.
+  var AVATAR_FACE =
+    '<path d="M12 64 Q13 51 32 50 Q51 51 52 64 Z" class="av-shirt"/>' +
+    '<path d="M26 50 L32 57 L38 50 Z" class="av-collar"/>' +
+    '<rect x="27" y="42" width="10" height="10" rx="3" class="av-skin"/>' +
+    '<circle cx="15" cy="32" r="4" class="av-skin"/><circle cx="49" cy="32" r="4" class="av-skin"/>' +
+    '<ellipse cx="32" cy="31" rx="16" ry="18" class="av-skin"/>' +
+    '<path d="M17 36 Q20 48 32 49 Q44 48 47 36 Q44 44 32 45 Q20 44 17 36 Z" class="av-stubble"/>' +
+    '<path d="M15 30 Q12 14 22 9 Q26 2 36 4 Q46 3 49 12 Q52 20 49 30 Q47 20 40 18 Q33 16 26 19 Q19 21 15 30 Z" class="av-hair"/>' +
+    '<path d="M22 9 Q30 -1 42 5 Q34 4 28 9 Z" class="av-hair"/>' +
+    '<path d="M21 25 Q25 23 29 25 M35 25 Q39 23 43 25" class="av-brow"/>' +
+    '<g class="cb-look"><g class="cb-eyes"><circle cx="25" cy="30" r="2.6"/><circle cx="39" cy="30" r="2.6"/></g></g>' +
+    '<path d="M22 30 Q25 33 28 30 M36 30 Q39 33 42 30" class="cb-sleep-eyes"/>' +
+    '<path d="M32 31 Q30 36 32 37 Q33 37 34 36.5" class="av-nose"/>' +
+    '<circle cx="32" cy="42" r="2.5" class="cb-o"/>' +
+    '<path d="M26 40 Q32 45 38 40" class="cb-mouth"/>' + ZZZ +
+    '<g class="cb-helmet">' +
+      '<path d="M11 31 Q10 3 32 3 Q54 3 53 31 L49 31 Q48 17 32 17 Q16 17 15 31 Z" class="cb-shell"/>' +
+      '<path d="M29 3.2 L35 3.2 L35 17 L29 17 Z" class="cb-stripe"/>' +
+      '<rect x="14" y="15" width="36" height="4" rx="2" class="cb-visor"/>' +
+    '</g>' +
+    // Waving hand, pivoting at the wrist
+    '<g class="av-hand">' +
+      '<rect x="56.0" y="44" width="5" height="14" rx="2.5" class="av-skin"/>' +
+      '<circle cx="58.5" cy="42" r="5" class="av-skin"/>' +
+      '<rect x="53.5" y="33" width="2.6" height="8" rx="1.3" class="av-skin"/>' +
+      '<rect x="56.5" y="31" width="2.6" height="9" rx="1.3" class="av-skin"/>' +
+      '<rect x="59.5" y="32" width="2.6" height="8" rx="1.3" class="av-skin"/>' +
+      '<rect x="62.2" y="35" width="2.4" height="7" rx="1.2" class="av-skin"/>' +
+    '</g>';
+
   function init() {
+    var isAvatar = ICON_STYLE === 'avatar';
+    var rides = ICON_STYLE === 'biker' || isAvatar;
     var ROBOT =
-      '<svg class="chatbot-robot" viewBox="0 0 64 64" aria-hidden="true">' +
-        '<line x1="32" y1="14" x2="32" y2="6" class="cb-antenna"/>' +
-        '<circle cx="32" cy="6" r="4" class="cb-bulb"/>' +
-        '<rect x="8" y="14" width="48" height="40" rx="14" class="cb-head"/>' +
-        '<rect x="3" y="28" width="6" height="12" rx="3" class="cb-ear"/>' +
-        '<rect x="55" y="28" width="6" height="12" rx="3" class="cb-ear"/>' +
-        '<g class="cb-eyes"><circle cx="23" cy="31" r="5"/><circle cx="41" cy="31" r="5"/></g>' +
-        '<circle cx="16" cy="41" r="3" class="cb-cheek"/><circle cx="48" cy="41" r="3" class="cb-cheek"/>' +
-        '<path d="M24 42 Q32 49 40 42" class="cb-mouth"/>' +
-      '</svg>';
-    var toggle = el('button', 'chatbot-toggle', ROBOT + '<i class="bx bx-x chatbot-x"></i>');
-    var bubble = el('div', 'chatbot-bubble', "Psst… ask me about Amit! 👋");
+      '<span class="chatbot-clip"><svg class="chatbot-robot" viewBox="0 0 64 64" aria-hidden="true">' +
+        BIKE + '<g class="cb-rider">' + (isAvatar ? AVATAR_FACE : ROBOT_FACE) + '</g>' +
+      '</svg></span>';
+    var toggle = el('button', 'chatbot-toggle' + (rides ? ' biker' : '') + (isAvatar ? ' avatar' : ''),
+      ROBOT + '<i class="bx bx-x chatbot-x"></i>');
+    var bubble = el('div', 'chatbot-bubble',
+      isAvatar ? "Hi! I'm Amit 👋 Ask me anything" :
+      ICON_STYLE === 'biker' ? "Vroom! Ask me about Amit 🏍️" : "Psst… ask me about Amit! 👋");
     bubble.setAttribute('aria-hidden', 'true');
     toggle.type = 'button';
     toggle.setAttribute('aria-label', 'Ask about Amit');
@@ -241,6 +305,7 @@
     var opened = false, pops = 0;
     function popBubble() {
       if (opened || pops >= 3) return;
+      if (toggle.classList.contains('sleepy')) { setTimeout(popBubble, 5000); return; }
       pops++;
       bubble.classList.add('show');
       setTimeout(function () { bubble.classList.remove('show'); }, 4500);
@@ -248,6 +313,81 @@
     }
     setTimeout(popBubble, 3000);
     bubble.addEventListener('click', function () { setOpen(true); });
+
+    // Eyes follow the cursor.
+    var look = toggle.querySelector('.cb-look');
+    var mouse = null, frame = null;
+    function updateEyes() {
+      frame = null;
+      if (!mouse) return;
+      var r = toggle.getBoundingClientRect();
+      var dx = mouse.x - (r.left + r.width / 2);
+      var dy = mouse.y - (r.top + r.height / 2);
+      var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+      var reach = Math.min(isAvatar ? 2 : 4, dist / 30); // max 4 SVG units, softer when close
+      look.style.transform = 'translate(' + (dx / dist * reach).toFixed(2) + 'px,' + (dy / dist * reach).toFixed(2) + 'px)';
+    }
+
+    // Falls asleep after a while with no activity; wakes up surprised.
+    var SLEEP_AFTER = 12000, idleTimer = null, surpriseTimer = null;
+    function goToSleep() {
+      if (panel.classList.contains('open')) return resetIdle();
+      look.style.transform = '';
+      toggle.classList.add('sleepy');
+    }
+    function resetIdle() {
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(goToSleep, SLEEP_AFTER);
+    }
+    function wake() {
+      if (toggle.classList.contains('sleepy')) {
+        toggle.classList.remove('sleepy');
+        toggle.classList.add('surprised');
+        clearTimeout(surpriseTimer);
+        surpriseTimer = setTimeout(function () { toggle.classList.remove('surprised'); }, 1200);
+      }
+      resetIdle();
+    }
+
+    document.addEventListener('mousemove', function (e) {
+      mouse = { x: e.clientX, y: e.clientY };
+      wake();
+      if (!frame) frame = requestAnimationFrame(updateEyes);
+    }, { passive: true });
+    ['scroll', 'touchstart', 'keydown'].forEach(function (ev) {
+      window.addEventListener(ev, wake, { passive: true });
+    });
+    resetIdle();
+
+    // Biker: hop on the bike and zoom across the button every so often.
+    if (rides) {
+      var RIDE_MS = 2600;
+      var ride = function () {
+        var busy = panel.classList.contains('open') || toggle.classList.contains('sleepy') ||
+          toggle.classList.contains('riding');
+        if (!busy) {
+          toggle.classList.add('riding');
+          setTimeout(function () { toggle.classList.remove('riding'); }, RIDE_MS);
+        }
+      };
+      setTimeout(ride, 1500);
+      setInterval(ride, 22000);
+      toggle.addEventListener('dblclick', ride);
+    }
+
+    // Avatar: wave "Hi!" every few seconds.
+    if (isAvatar) {
+      var wave = function () {
+        if (panel.classList.contains('open') || toggle.classList.contains('sleepy') ||
+          toggle.classList.contains('riding')) return;
+        toggle.classList.remove('waving');
+        void toggle.offsetWidth; // restart the animation
+        toggle.classList.add('waving');
+        setTimeout(function () { toggle.classList.remove('waving'); }, 1600);
+      };
+      setTimeout(wave, 4500);
+      setInterval(wave, 9000);
+    }
 
     var messages = panel.querySelector('.chatbot-messages');
     var suggestions = panel.querySelector('.chatbot-suggestions');
