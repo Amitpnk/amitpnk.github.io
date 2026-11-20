@@ -204,7 +204,20 @@
   }
 
   function init() {
-    var toggle = el('button', 'chatbot-toggle', '<i class="bx bx-message-rounded-dots"></i>');
+    var ROBOT =
+      '<svg class="chatbot-robot" viewBox="0 0 64 64" aria-hidden="true">' +
+        '<line x1="32" y1="14" x2="32" y2="6" class="cb-antenna"/>' +
+        '<circle cx="32" cy="6" r="4" class="cb-bulb"/>' +
+        '<rect x="8" y="14" width="48" height="40" rx="14" class="cb-head"/>' +
+        '<rect x="3" y="28" width="6" height="12" rx="3" class="cb-ear"/>' +
+        '<rect x="55" y="28" width="6" height="12" rx="3" class="cb-ear"/>' +
+        '<g class="cb-eyes"><circle cx="23" cy="31" r="5"/><circle cx="41" cy="31" r="5"/></g>' +
+        '<circle cx="16" cy="41" r="3" class="cb-cheek"/><circle cx="48" cy="41" r="3" class="cb-cheek"/>' +
+        '<path d="M24 42 Q32 49 40 42" class="cb-mouth"/>' +
+      '</svg>';
+    var toggle = el('button', 'chatbot-toggle', ROBOT + '<i class="bx bx-x chatbot-x"></i>');
+    var bubble = el('div', 'chatbot-bubble', "Psst… ask me about Amit! 👋");
+    bubble.setAttribute('aria-hidden', 'true');
     toggle.type = 'button';
     toggle.setAttribute('aria-label', 'Ask about Amit');
     toggle.setAttribute('aria-expanded', 'false');
@@ -222,6 +235,19 @@
 
     document.body.appendChild(panel);
     document.body.appendChild(toggle);
+    document.body.appendChild(bubble);
+
+    // Pop the speech bubble a few times until the visitor opens the chat.
+    var opened = false, pops = 0;
+    function popBubble() {
+      if (opened || pops >= 3) return;
+      pops++;
+      bubble.classList.add('show');
+      setTimeout(function () { bubble.classList.remove('show'); }, 4500);
+      setTimeout(popBubble, 20000);
+    }
+    setTimeout(popBubble, 3000);
+    bubble.addEventListener('click', function () { setOpen(true); });
 
     var messages = panel.querySelector('.chatbot-messages');
     var suggestions = panel.querySelector('.chatbot-suggestions');
@@ -259,7 +285,8 @@
       panel.classList.toggle('open', open);
       toggle.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
-      toggle.innerHTML = open ? '<i class="bx bx-x"></i>' : '<i class="bx bx-message-rounded-dots"></i>';
+      bubble.classList.remove('show');
+      if (open) opened = true;
       if (open) {
         if (!greeted) {
           add("Hi! 👋 I'm Amit's assistant. Ask me anything about his work, skills, courses or hobbies.", 'bot');
