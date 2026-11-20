@@ -1,0 +1,505 @@
+/*--------------------------------------------------------------
+# Black theme overrides for the MyResume template
+# Loaded after style.css
+--------------------------------------------------------------*/
+:root {
+  --bg: #0a0a0a;
+  --bg-2: #121212;
+  --card: #161616;
+  --border: #262626;
+  --text: #d6d6d6;
+  --heading: #ffffff;
+  --muted: #9a9a9a;
+  --accent: #18d26e;
+  --accent-hover: #35e888;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
+}
+
+::selection {
+  background: var(--accent);
+  color: #000;
+}
+
+/* Preloader */
+#preloader {
+  background: var(--bg);
+}
+
+#preloader:before {
+  border-color: var(--accent);
+  border-top-color: var(--bg);
+  border-bottom-color: var(--bg);
+}
+
+/* Back to top */
+.back-to-top {
+  background: var(--accent);
+  color: #000;
+}
+
+.back-to-top:hover {
+  background: var(--accent-hover);
+  color: #000;
+}
+
+/*--------------------------------------------------------------
+# Side navigation
+--------------------------------------------------------------*/
+@media (max-width: 992px) {
+  #header {
+    background: var(--bg-2);
+    border-right: 1px solid var(--border);
+  }
+}
+
+.nav-menu a {
+  color: #cfcfcf;
+  background: #1c1c1c;
+  border: 1px solid var(--border);
+}
+
+.nav-menu a span {
+  color: #cfcfcf;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+  color: #000;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.nav-menu a:hover span,
+.nav-menu .active > a span,
+.nav-menu li:hover > a span {
+  color: #000;
+}
+
+.mobile-nav-toggle i {
+  color: #fff;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: var(--accent);
+}
+
+/*--------------------------------------------------------------
+# Hero: black background, black & white photo on the right
+--------------------------------------------------------------*/
+#hero {
+  background: #000;
+  overflow: hidden;
+}
+
+#hero:before {
+  display: none;
+}
+
+#hero .hero-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 68%;
+  background: url("../img/hero-bg.jpg") 38% center / cover no-repeat;
+  filter: grayscale(1) contrast(1.15) brightness(.72);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .55) 22%, #000 48%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, .55) 22%, #000 48%);
+  animation: heroFade 1.6s ease-out both;
+}
+
+/* Soft vignette so the bottom and right edges melt into black */
+#hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, #000 0%, transparent 25%),
+    radial-gradient(ellipse at 70% 50%, transparent 45%, rgba(0, 0, 0, .55) 100%);
+  pointer-events: none;
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+#hero .hero-tag {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+
+#hero h1 {
+  color: #fff;
+  font-size: 72px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+#hero p {
+  color: #e6e6e6;
+  font-size: 28px;
+}
+
+#hero p span.typed {
+  color: #fff;
+  letter-spacing: .5px;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 2px;
+}
+
+#hero .typed-cursor {
+  color: #fff;
+}
+
+#hero .hero-sub {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #a8a8a8;
+  max-width: 520px;
+  margin-top: 22px;
+  line-height: 1.7;
+}
+
+#hero .social-links {
+  margin-top: 34px;
+}
+
+#hero .social-links a {
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .08);
+  color: #fff;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .social-links a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+}
+
+#hero .hero-btn {
+  display: inline-block;
+  margin-top: 34px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  background: var(--accent);
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  transition: .3s;
+}
+
+#hero .hero-btn:hover {
+  background: var(--accent-hover);
+  color: #000;
+}
+
+#hero .hero-btn.ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .3);
+  margin-left: 10px;
+}
+
+#hero .hero-btn.ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 992px) {
+  #hero {
+    text-align: left;
+  }
+
+  #hero .hero-photo {
+    width: 100%;
+    background-position: 40% center;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, .5) 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, .5) 55%, transparent 100%);
+    filter: grayscale(1) contrast(1.1) brightness(.45);
+  }
+
+  #hero .container {
+    padding-top: 30vh;
+  }
+
+  #hero h1 {
+    font-size: 44px;
+    line-height: 1.1;
+  }
+
+  #hero p {
+    font-size: 22px;
+  }
+
+  #hero .hero-btn.ghost {
+    margin-left: 6px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+  background: var(--bg);
+}
+
+.section-bg {
+  background: var(--bg-2) !important;
+}
+
+.section-title h2 {
+  color: #fff;
+}
+
+.section-title h2::before {
+  background: #333;
+}
+
+.section-title h2::after {
+  background: var(--accent);
+}
+
+.section-title p {
+  color: var(--muted);
+}
+
+/* About */
+.about img {
+  filter: grayscale(1) contrast(1.05);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  transition: filter .5s;
+}
+
+.about img:hover {
+  filter: none;
+}
+
+.about .content h3 {
+  color: #fff;
+}
+
+.about .content .font-italic {
+  color: var(--accent);
+}
+
+.about .content ul i {
+  color: var(--accent);
+}
+
+/* Skills */
+.skills .progress .skill {
+  color: #e6e6e6;
+}
+
+.skills .progress-bar-wrap {
+  background: #222;
+}
+
+.skills .progress-bar {
+  background-color: var(--accent);
+}
+
+/* Resume */
+.resume .resume-title {
+  color: #fff;
+}
+
+.resume .resume-item {
+  border-left-color: var(--accent);
+}
+
+.resume .resume-item h4,
+.resume .resume-item h4 a {
+  color: var(--accent);
+}
+
+.resume .resume-item h5 {
+  background: #1e1e1e;
+  color: #e6e6e6;
+}
+
+.resume .resume-item::before {
+  background: var(--bg);
+  border-color: var(--accent);
+}
+
+.resume .resume-item.current::before {
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(24, 210, 110, .2);
+}
+
+.resume .resume-item p,
+.resume .resume-item li {
+  color: var(--text);
+}
+
+.resume .resume-item strong {
+  color: #fff;
+}
+
+.badge-now {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 50px;
+  background: var(--accent);
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+/* Services / tutorial cards */
+.services .icon-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: none;
+  height: 100%;
+  width: 100%;
+}
+
+.services .icon-box:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 35px 0 rgba(24, 210, 110, .08);
+}
+
+.services .icon-box .icon svg path {
+  fill: #232323;
+}
+
+.services .icon-box h4 a {
+  color: #fff;
+}
+
+.services .icon-box:hover h4 a {
+  color: var(--accent);
+}
+
+.services .icon-box p {
+  color: var(--muted);
+}
+
+.services .icon-box .box-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.services .iconbox-green i {
+  color: #18d26e;
+}
+
+.services .iconbox-green:hover .icon i {
+  color: #000;
+}
+
+.services .iconbox-green:hover .icon path {
+  fill: #18d26e;
+}
+
+/* Contact */
+.contact .info {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: 6px;
+}
+
+.contact .info i {
+  color: var(--accent);
+  background: rgba(24, 210, 110, .1);
+}
+
+.contact .info h4 {
+  color: #fff;
+}
+
+.contact .info p {
+  color: var(--muted);
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: var(--accent);
+  color: #000;
+}
+
+/* Footer */
+#footer {
+  background: #000;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+#footer h3 {
+  color: #fff;
+}
+
+#footer .social-links a {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+#footer .social-links a:hover {
+  background: var(--accent);
+  color: #000;
+}
