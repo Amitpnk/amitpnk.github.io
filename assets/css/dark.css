@@ -516,6 +516,20 @@ section {
   color: #fff;
 }
 
+#footer .credits {
+  font-size: 11px;
+  color: #555;
+  margin-top: 6px;
+}
+
+#footer .credits a {
+  color: #666;
+}
+
+#footer .credits a:hover {
+  color: var(--accent);
+}
+
 #footer .social-links a:hover {
   background: var(--accent);
   color: #000;
