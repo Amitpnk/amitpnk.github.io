@@ -5,9 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Amit Naik</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <title>Amit Naik · Staff Engineer</title>
+  <meta name="description"
+    content="Amit Naik is a Staff Engineer at Commonwealth Bank (CBA) in Bengaluru, building GenAI and agentic AI systems on top of 15+ years of .NET, cloud and distributed systems work. Trainer, course author and blogger.">
+  <meta name="keywords"
+    content="Amit Naik, Staff Engineer, CBA, CommBank, Generative AI, Agentic AI, RAG, LLM, .NET, Azure, AWS, Microservices, Trainer">
+  <meta property="og:title" content="Amit Naik · Staff Engineer">
+  <meta property="og:description" content="Building GenAI and agentic AI systems. Staff Engineer at CBA. Trainer and course author.">
+  <meta property="og:image" content="https://amitpnk.github.io/assets/img/Slides/pic-1.jpeg">
+  <meta property="og:url" content="https://amitpnk.github.io/">
+  <meta name="theme-color" content="#000000">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -28,6 +35,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Black theme -->
+  <link href="assets/css/dark.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: MyResume - v2.0.0
@@ -35,18 +44,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <!-- <script type="text/javascript">
-    function playMusic() {
-      document.getElementById("myAudio").play();
-    }
-  </script> -->
 </head>
 
 <body>
-  <!-- 
-  <audio id="myAudio" controls loop autoplay hidden="false">
-    <source src="Music/calmpiano.ogg" type="audio/ogg">
-  </audio> -->
 
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -59,8 +59,10 @@
         <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#tutorial"><i class="bx bx-book-content"></i> <span>Tutorial content</span></a></li>
-        <li><a href="#blog"><i class="bx bx-server"></i> <span>Blog &amp; Project</span></a></li>
+        <li><a href="#tutorial"><i class="bx bx-book-content"></i> <span>Courses</span></a></li>
+        <li><a href="#blog"><i class="bx bx-server"></i> <span>Blog &amp; Projects</span></a></li>
+        <li><a href="cycling.html"><i class="bx bx-cycling"></i> <span>Cycling</span></a></li>
+        <li><a href="running.html"><i class="bx bx-run"></i> <span>Running</span></a></li>
         <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -69,21 +71,35 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <!-- Hero slideshow: shows every photo in assets/img/Slides/ automatically (see assets/js/slides.js).
+         Add or delete photos in that folder; no HTML change needed. -->
+    <div class="hero-slides" aria-hidden="true"></div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <span class="hero-tag">Staff Engineer · Commonwealth Bank</span>
       <h1>Amit Naik</h1>
-      <br>
-      <h6>Day you stop learning, you will stop growing in your life. <br> Keep learning, Keep growing</h6>
-      <p>I'm <span class="typed" data-typed-items="Software Architect, Technical lead, Full-stack developer, .Net developer, 
-        React developer, Blogger, Trainer, Biker"></span></p>
+      <p>I'm <span class="typed"
+          data-typed-items="Staff Engineer,AI Engineer,Software Architect,Agentic AI builder,Trainer,Blogger,Biker,Cyclist,Runner"></span>
+      </p>
+      <div class="hero-sub">Building GenAI and agentic AI systems on 15+ years of .NET, cloud and distributed
+        systems.</div>
+      <blockquote class="hero-quote">“Day you stop learning, you will stop growing in your life.<br>
+        <span>Keep learning, Keep growing</span>”</blockquote>
       <div class="social-links">
-        <a href="https://github.com/Amitpnk" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:amit.naik8103@gmail.com" class="envelope"><i class="bx bxs-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/amitpnk/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://twitter.com/amitpnk" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <!-- <a href="https://www.facebook.com/profile.php?id=100074561137830" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-        <a href="skype:amit.naik8103?call" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="https://amit-naik.medium.com/" class="medium"><i class="bx bxl-medium"></i></a>
-        <!-- <a class="music" onclick=playMusic()><i class="bx bx-music"></i></a> -->
+        <a href="https://github.com/Amitpnk" class="github" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/amitpnk/" class="linkedin" aria-label="LinkedIn"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://amit-naik.medium.com/" class="medium" aria-label="Medium"><i class="bx bxl-medium"></i></a>
+        <a href="https://www.strava.com/athletes/114731105" class="strava" aria-label="Strava"><svg
+            class="strava-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+          </svg></a>
+        <a href="https://x.com/amitpnk" class="twitter" aria-label="X (Twitter)"><i class="bx bxl-twitter"></i></a>
+        <a href="mailto:amit.naik8103@gmail.com" class="envelope" aria-label="Email"><i
+            class="bx bxs-envelope"></i></a>
+      </div>
+      <div>
+        <a href="https://topmate.io/amitpnk" target="_blank" rel="noopener" class="hero-btn">Book a 1:1</a>
+        <a href="#tutorial" class="hero-btn ghost scrollto">AI courses</a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -96,44 +112,45 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>Amit Naik self-motivated developer </p>
-          <p>
-            All I can guarantee u is a smile on ur face..! Happy n enjoy learning...!
-            Besides my family n friends, motorcycling is my second passion, followed closely by software development and
-            my love of custom, high performance vehicles!!</p>
+          <p>Engineer, trainer, biker, cyclist and runner. Besides family and friends, motorcycling, cycling and
+            running are my passions, followed closely by software and AI.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Amit Naik">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Software Architect &amp; Full Stack Developer </h3>
+            <h3>Staff Engineer &amp; AI Engineer</h3>
             <p class="font-italic">
-              Asp.net Core, APIs, C#, Design pattern, Sqlserver, React, Angular, MSBI, Webcomponent
+              Generative AI, Agentic AI, RAG, MCP, .NET, Python, Azure, AWS, Microservices, Architecture
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 15 July 1985</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> https://amitpnk.github.io</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : Bengaluru, India</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Company:</strong> Commonwealth Bank (CBA)</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> amitpnk.github.io</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Bengaluru, India</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> MTech</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> MTech, BITS Pilani</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> amit.naik8103@gmail.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Mentoring:</strong> <a
+                      href="https://topmate.io/amitpnk" target="_blank" rel="noopener">Topmate</a></li>
                 </ul>
               </div>
             </div>
             <p>
-              <b>Software Architect</b> with 15+ years of expertise in designing scalable, cloud-native applications
-              using
-              .NET, Azure, and microservices architecture. Proven ability to lead end-to-end solution delivery,
-              integrate AI/ML capabilities, and implement DevOps automation with a focus on performance, security, and
-              innovation
+              <b>Staff Engineer</b> at Commonwealth Bank with 15+ years of experience designing scalable,
+              cloud-native systems with .NET, Azure and microservices. My focus now is <b>Generative and Agentic
+                AI</b>: building LLM-powered agents, RAG and Graph RAG pipelines, and the platforms, evals and
+              guardrails that get them into production.
+            </p>
+            <p>
+              I also teach what I build, through hands-on workshops, a YouTube series, and courses on agentic AI,
+              Claude Code and Graph RAG.
             </p>
           </div>
         </div>
@@ -147,7 +164,7 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>Below are some skills</p>
+          <p>A backend and architecture foundation, with AI engineering on top</p>
         </div>
 
         <div class="row skills-content">
@@ -155,25 +172,7 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">.NET <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">React <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="progress">
-              <span class="skill">Azure Cloud <i class="val">85%</i></span>
+              <span class="skill">Generative &amp; Agentic AI <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -181,9 +180,25 @@
             </div>
 
             <div class="progress">
-              <span class="skill">AI/ML (LLM, GPT, MLflow) <i class="val">60%</i></span>
+              <span class="skill">RAG, Graph RAG &amp; MCP <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">.NET / ASP.NET Core <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python &amp; FastAPI <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
@@ -191,26 +206,17 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill">ASP.NET Core <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
 
             <div class="progress">
-              <span class="skill">Design Patterns <i class="val">90%</i></span>
+              <span class="skill">Architecture &amp; Design Patterns <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
 
-
-
             <div class="progress">
-              <span class="skill">Docker & Kubernetes <i class="val">85%</i></span>
+              <span class="skill">Azure &amp; AWS Cloud <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -218,9 +224,17 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Azure Bicep (IaC) <i class="val">75%</i></span>
+              <span class="skill">Docker &amp; Kubernetes <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">React <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
@@ -228,7 +242,6 @@
           </div>
 
         </div>
-
 
       </div>
     </section><!-- End Skills Section -->
@@ -239,8 +252,8 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Software Architect | Full Stack .NET Developer | Cloud-Native Solutions, Microservices, ASP.NET Core, C#,
-            SQL Server, React, Web Components, Azure, DevOps, AI/ML, Design Patterns</p>
+          <p>Staff Engineer | AI Engineer | Software Architect: Generative &amp; Agentic AI, Cloud-Native
+            Microservices, .NET, Python, Azure, AWS</p>
         </div>
 
         <div class="row">
@@ -249,189 +262,144 @@
             <div class="resume-item pb-0">
               <h4>Amit Naik</h4>
               <p><em>
-                <b>Software Architect</b> with 15+ years of expertise in designing scalable, cloud-native applications using
-                  .NET, Azure, and microservices architecture. Proven ability to lead end-to-end solution delivery,
-                  integrate AI/ML capabilities, and implement DevOps automation with a focus on performance, security,
-                  and innovation
+                  <b>Staff Engineer</b> with 15+ years designing scalable, cloud-native systems with .NET, Azure and
+                  microservices, now building Generative and Agentic AI systems. Proven ability to lead end-to-end
+                  delivery and to bring AI into engineering teams.
                 </em></p>
               <ul>
-                <li>Analysis, Design & Development</li>
-                <li>Application Development Cycle</li>
-                <li>Client Interaction</li>
-                <li>POC on new technologies</li>
-                <li>Architecting & Integration</li>
-                <li>Blogger, Training and Skills Development</li>
-                <li>Full Product Life Cycle</li>
-                <li>Product Architecture</li>
+                <li>Architecture &amp; technical leadership</li>
+                <li>Generative AI, agents, RAG &amp; MCP</li>
+                <li>Cloud-native microservices</li>
+                <li>Mentoring, training &amp; course authoring</li>
+                <li>POCs on new technologies</li>
+                <li>Full product life cycle</li>
               </ul>
             </div>
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Technology in Computer Software Engineering</h4>
-              <h5>2024 Passout</h5>
+              <h4>Master of Technology in Software Engineering</h4>
+              <h5>2024</h5>
               <p><em>BITS Pilani WILP, India</em></p>
             </div>
             <div class="resume-item">
               <h4>Bachelor of Engineering in EEE</h4>
-              <h5>2008 Passout</h5>
+              <h5>2008</h5>
               <p><em>Sir M. Visvesvaraya Institute of Technology, Bengaluru, India</em></p>
             </div>
             <div class="resume-item">
               <h4>Diploma in EEE</h4>
-              <h5>2005 Passout</h5>
+              <h5>2005</h5>
               <p><em>RNS Polytechnic, Sirsi, Karnataka, India</em></p>
-
             </div>
 
-            <h3 class="resume-title">Achievement</h3>
+            <h3 class="resume-title">Achievements</h3>
             <div class="resume-item">
-              <h4>Bronze medal - State level swimming competitions </h4>
-              <h5>Public</h5>
-              <p><em>Have participated in State level competitions and have won on Bronze medal</em></p>
-
+              <h4>AI course author &amp; trainer</h4>
+              <h5>2025 – Present</h5>
+              <p><em>Created and delivered workshops and courses on Agentic AI, GenAI engineering, Claude Code and
+                  Graph RAG</em></p>
             </div>
-
             <div class="resume-item">
-              <h4>Top Contributor on Digital tutor in KM RnR H2FY16</h4>
+              <h4>Top Contributor (1st Rank), Digital Tutor</h4>
               <h5>Infosys</h5>
-              <p><em>Awarded Top Contributor (1st Rank) on Digital tutor in KM RnR H2FY16</em></p>
-
-            </div>
-
-            <div class="resume-item">
-              <h4>Workshop on MVC using Entity Framework CF, AngularJS & WebAPI</h4>
-              <h5>Infosys</h5>
-              <p><em>Conducted training/presentation on “Workshop on MVC using Entity Framework CF, AngularJS & WebAPI”
-                  for the developers in the Infosys and received good feedback from the participant</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Workshop on AngularJS</h4>
-              <h5>Infosys</h5>
-              <p><em>Conducted training on “Workshop on AngularJS” for the developers in the Infosys and received good
-                  feedback from the participant</em></p>
+              <p><em>Awarded Top Contributor in KM RnR H2FY16</em></p>
             </div>
             <div class="resume-item">
               <h4>Individual Extra Miler Award</h4>
               <h5>Infosys</h5>
-              <p><em>Individual Extra Miler Award for the solution & design “Recon Solution” provided for AIRTEL Africa
-                  Money</em></p>
+              <p><em>For the solution and design of the "Recon Solution" for Airtel Africa Money</em></p>
             </div>
             <div class="resume-item">
-              <h4>Digital tutor</h4>
-              <h5>Infosys</h5>
-              <p><em>Conducted technical video recording (Digital tutor) on new technologies in the Infosys Ltd</em></p>
+              <h4>Workshops on MVC, Web API &amp; AngularJS</h4>
+              <h5>Infosys &amp; Chimera</h5>
+              <p><em>Conducted developer training on new technologies, with strong participant feedback</em></p>
             </div>
             <div class="resume-item">
-              <h4>Initiated training session</h4>
-              <h5>Chimera</h5>
-              <p><em>Chimera Organization has appreciated in training on new technologies for the developers</em></p>
+              <h4>Toastmasters member</h4>
+              <h5>Société Générale</h5>
             </div>
-
             <div class="resume-item">
-              <h4>Toastmaster member</h4>
-              <h5>Societe General</h5>
-              <p><em>Member of Toastmaster in Societe General</em></p>
+              <h4>Bronze medal, state-level swimming</h4>
+              <h5>Karnataka</h5>
             </div>
-
           </div>
+
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
 
-            <div class="resume-item">
-              <h4><a href="https://www.honeywell.com/us/en">Honeywell</a></h4>
-              <h5>Jul 2021 - Present</h5>
-              <p><em>Key Technologies – .NET Core 8, Web API, React, gRPC, GraphQL, SQL Server, PostgreSQL, Azure Key
-                  Vault, AKS, Azure Service Bus, Azure Storage, RabbitMQ, Agile/Scrum</em></p>
+            <div class="resume-item current">
+              <h4><a href="https://www.commbank.com.au/" target="_blank" rel="noopener">Commonwealth Bank (CBA)</a>
+                <span class="badge-now">Now</span></h4>
+              <h5>Jan 2026 - Present</h5>
+              <p><em>Staff Engineer · Bengaluru</em></p>
               <ul>
-                <li>Architected and developed enterprise-grade solutions using microservices, secure APIs, and
-                  containerized deployments in AKS.</li>
-                <li>Designed cloud-native services using Azure Key Vault, Service Bus, and Storage for scalable and
-                  secure integration.</li>
-                <li>Led mentoring initiatives and cross-team solution reviews, improving technical standards across the
-                  team.</li>
-
-                <ul>
-                  <li><strong>Gate Management System</strong>: Architected and developed a real-time vehicle access
-                    management solution integrated with third-party systems (UVSS, LPR, X-RAY). Built using <em>React,
-                      ASP.NET Core Web API, and gRPC</em>, with secure role-based control at site entry points.</li>
-
-                  <li><strong>HBOC OS</strong>: Engineered a cloud-hosted remote services portal to manage alarms,
-                    support workflows, and Niagara integration. Leveraged <em>GraphQL, PostgreSQL, React, and
-                      RabbitMQ</em> for a highly responsive, scalable user experience.</li>
-
-                  <li><strong>ROI Engine</strong>: Created RESTful APIs for Honeywell Forge to estimate energy and cost
-                    savings from connected building assets. Implemented using <em>ASP.NET Core Web API and SQL
-                      Server</em> with real-time analytics support for smart infrastructure.</li>
-                </ul>
-
-              </ul>
-
-            </div>
-
-            <div class="resume-item">
-              <h4><a href="https://globalsolution.societegenerale.com/">Société Générale, India</a></h4>
-              <h5>May 2017 - June 2021</h5>
-              <p><em>Key Technologies – .NET Core 3.1, Web API, React, Preact, Angular, Web Components, HTML, CSS, SQL
-                  Server, Agile/Scrum</em></p>
-              <ul>
-                <li>Built financial tools and dashboards for electronic trading and client profitability reporting.</li>
-                <li>Mentored junior developers and improved software quality through code reviews and architectural
-                  guidance.</li>
-                <ul>
-                  <li><strong>CDM-Historical</strong>: Developed KPIs and analytics for the FIC business using React and
-                    SQL Server.</li>
-                  <li><strong>CDM Widget</strong>: Built modular trading dashboards using Preact and Web Components,
-                    replacing Tableau visualizations.</li>
-                  <li><strong>Abacus</strong>: Delivered profitability analysis tools for front-office business teams.
-                  </li>
-                  <li><strong>SBC Broadcast</strong>: Developed Angular-based internal communication platform for
-                    controlled message broadcasting.</li>
-                </ul>
+                <li>Technical leadership across teams: architecture direction, design reviews and engineering
+                  standards.</li>
+                <li>Driving adoption of Generative AI and AI-assisted development practices across engineering.</li>
+                <li>Mentoring engineers and tech leads.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4><a href="https://www.infosysbpm.com">Infosys, India</a></h4>
-              <h5>Aug 2014 – May 2017</h5>
-              <p><em>Key Technologies – Visual Studio 2013 (C#, ASP.NET MVC), AngularJS, SQL Server, SSIS,
-                  Agile/Scrum</em></p>
+              <h4><a href="https://www.honeywell.com/" target="_blank" rel="noopener">Honeywell</a></h4>
+              <h5>Jul 2021 - Dec 2025</h5>
+              <p><em>Software Architect · .NET 8, Web API, React, gRPC, GraphQL, SQL Server, PostgreSQL, Azure Key
+                  Vault, AKS, Service Bus, RabbitMQ</em></p>
               <ul>
-                <li>Designed and developed enterprise finance modules like Recon and ICAS with automation features.</li>
-                <li>Provided technical leadership, training, and digital enablement across teams.</li>
-                <li>Conducted training sessions and delivered reusable architecture components.</li>
+                <li>Architected enterprise-grade solutions using microservices, secure APIs and containerised
+                  deployments in AKS.</li>
+                <li><strong>Gate Management System</strong>: real-time vehicle access management integrated with UVSS,
+                  LPR and X-ray systems, built with React, ASP.NET Core and gRPC.</li>
+                <li><strong>HBOC OS</strong>: cloud-hosted remote services portal for alarms, support workflows and
+                  Niagara integration, using GraphQL, PostgreSQL, React and RabbitMQ.</li>
+                <li><strong>ROI Engine</strong>: REST APIs for Honeywell Forge estimating energy and cost savings from
+                  connected buildings.</li>
+                <li>Led mentoring and cross-team solution reviews.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4><a href="https://www.chimeratechnologies.com/">Chimera Technologies (P) Ltd, India</a></h4>
-              <h5>Mar 2013 – Jul 2014</h5>
-              <p><em>Key Technologies – Visual Studio 2010 (C#, ASP.NET), Google Map API, Telerik UI, SQL Server</em>
-              </p>
+              <h4><a href="https://globalsolution.societegenerale.com/" target="_blank" rel="noopener">Société
+                  Générale, India</a></h4>
+              <h5>May 2017 - Jun 2021</h5>
+              <p><em>.NET Core, Web API, React, Preact, Angular, Web Components, SQL Server</em></p>
               <ul>
-                <li>Developed reporting dashboards and request management solutions for telecom clients.</li>
-                <li>Projects: Revenue Assurance (REVA), CM Reports, iRequestCM.</li>
+                <li><strong>CDM-Historical</strong>: KPIs and analytics for the FIC business.</li>
+                <li><strong>CDM Widget</strong>: modular trading dashboards with Preact and Web Components, replacing
+                  Tableau.</li>
+                <li><strong>Abacus</strong>: profitability analysis tools for front-office teams.</li>
+                <li><strong>SBC Broadcast</strong>: Angular platform for controlled internal broadcasts.</li>
+                <li>Mentored developers through code reviews and architectural guidance.</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4><a href="http://agnisoft.com/">Agni Software (P) Ltd, India</a></h4>
+              <h4><a href="https://www.infosysbpm.com" target="_blank" rel="noopener">Infosys, India</a></h4>
+              <h5>Aug 2014 - May 2017</h5>
+              <p><em>C#, ASP.NET MVC, AngularJS, SQL Server, SSIS</em></p>
+              <ul>
+                <li>Designed enterprise finance modules (Recon, ICAS) with automation features.</li>
+                <li>Technical leadership, training and Digital Tutor content.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Chimera Technologies</h4>
+              <h5>Mar 2013 - Jul 2014</h5>
+              <p><em>Telecom reporting dashboards and request management: REVA, CM Reports, iRequestCM</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Agni Software</h4>
               <h5>Sep 2011 - Mar 2013</h5>
-              <p><em>Key Technologies – Visual Studio 2010, ASP.NET, C#, DevExpress, SQL Server 2008</em></p>
-              <ul>
-                <li>Worked on ERP modules and custom solutions for event and education systems.</li>
-                <li>Projects: Center for Environment Education, One4All Event Management System.</li>
-              </ul>
+              <p><em>ERP modules for event and education systems</em></p>
             </div>
 
             <div class="resume-item">
-              <h4><a href="https://www.nic.in/">National Informatics Centre (NIC), India</a></h4>
-              <h5>Nov 2009 – Aug 2011</h5>
-              <p><em>Key Technologies – Visual Studio 2005, ASP.NET, VB.NET, SQL Server 2008</em></p>
-              <ul>
-                <li>Developed and maintained e-Governance projects in transportation and education.</li>
-                <li>Projects: Student Information System (SIS), eVahan – RTO Project.</li>
-              </ul>
+              <h4>National Informatics Centre (NIC)</h4>
+              <h5>Nov 2009 - Aug 2011</h5>
+              <p><em>e-Governance: Student Information System and eVahan (RTO)</em></p>
             </div>
           </div>
 
@@ -440,66 +408,121 @@
       </div>
     </section><!-- End Resume Section -->
 
-    <!-- ======= tutorial Section ======= -->
-    <section id="tutorial" class="services">
+    <!-- ======= Courses / Tutorial Section ======= -->
+    <section id="tutorial" class="services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Tutorial</h2>
-          <p> Method of transferring knowledge and may be used as a part of a learning process of technologies
-          </p>
+          <h2>Courses &amp; Tutorials</h2>
+          <p>Hands-on, lab-first material for engineers. Everything is open on GitHub.</p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-red">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-green">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="none" stroke-width="0" fill="#f5f5f5"
                     d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
                   </path>
                 </svg>
-                <i class="bx bxl-angular"></i>
+                <i class="bx bx-bot"></i>
               </div>
-              <h4><a href="https://github.com/Amitpnk/angular-tutorial">Angular</a></h4>
-              <p>Step by step creating angular application in each labs </p>
+              <span class="box-tag">Workshop</span>
+              <h4><a href="https://amitpnk.github.io/Agentic-AI-From-Zero/">Agentic AI From Zero</a></h4>
+              <p>Two-day hands-on workshop: how LLMs work, prompting, APIs and RAG on day 1, then building agents on
+                day 2. Slides, notes and Colab labs.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="200">
-            <div class="icon-box iconbox-blue ">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="none" stroke-width="0" fill="#f5f5f5"
                     d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
                   </path>
                 </svg>
-                <i class="bx bxl-react"></i>
+                <i class="bx bxl-youtube"></i>
               </div>
-              <h4><a href="">React</a></h4>
-              <p>Step by step creating react application in each labs </p>
+              <span class="box-tag">YouTube series</span>
+              <h4><a href="https://github.com/Amitpnk/genai-zero-to-production">GenAI Engineering: Zero to
+                  Production</a></h4>
+              <p>From your first API call to a production AI agent on AWS, with companion code for every episode.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-            data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-orange">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="none" stroke-width="0" fill="#f5f5f5"
                     d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
                   </path>
                 </svg>
-                <i class="bx bx-transfer"></i>
+                <i class="bx bx-terminal"></i>
               </div>
-              <h4><a href="https://github.com/Amitpnk/webapi-tutorial">Web API</a></h4>
-              <p>Creating webapi entity-framework automapper autofac dependency-injection</p>
+              <span class="box-tag">Video series</span>
+              <h4><a href="https://github.com/Amitpnk/claude-code">Learn Claude Code the Right Way</a></h4>
+              <p>15 videos on disciplined AI-assisted development: CLAUDE.md, skills, subagents, spec-driven
+                development, MCP and hooks.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
+                  </path>
+                </svg>
+                <i class="bx bx-network-chart"></i>
+              </div>
+              <span class="box-tag">Course</span>
+              <h4><a href="https://github.com/Amitpnk/Graph-RAG-Build-Knowledge-Graph-Powered-Retrieval-Systems">Graph
+                  RAG</a></h4>
+              <p>Build knowledge-graph-powered retrieval systems, starting from why standard RAG falls short.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
+                  </path>
+                </svg>
+                <i class="bx bx-rocket"></i>
+              </div>
+              <span class="box-tag">Course</span>
+              <h4><a href="https://github.com/Amitpnk/ai-forward-deployment-engineer-course">AI Forward Deployment
+                  Engineer</a></h4>
+              <p>ML, deep learning, transformers, GenAI, agents, cloud and DevOps, organised around the real FDE job.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
+                  </path>
+                </svg>
+                <i class="bx bx-map-alt"></i>
+              </div>
+              <span class="box-tag">Roadmap</span>
+              <h4><a href="https://github.com/Amitpnk/modern-ai-engineering">Modern AI Engineering</a></h4>
+              <p>Curated learning path with notes: ML fundamentals, LLM apps, agents, evals, guardrails and
+                production.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-yellow">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -509,15 +532,29 @@
                 </svg>
                 <i class="bx bx-outline"></i>
               </div>
-              <h4><a href="https://github.com/Amitpnk/DesignPattern">Design pattern</a></h4>
-              <p>
-                Design patterns are documented tried and tested solutions for recurring problems in a given context.
-                Including GOF pattern and DDD pattern
-              </p>
+              <span class="box-tag">Tutorial</span>
+              <h4><a href="https://github.com/Amitpnk/DesignPattern">Design Patterns</a></h4>
+              <p>Tried and tested solutions to recurring problems, including GoF and DDD patterns.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                  </path>
+                </svg>
+                <i class="bx bx-transfer"></i>
+              </div>
+              <span class="box-tag">Tutorial</span>
+              <h4><a href="https://github.com/Amitpnk/webapi-tutorial">Web API</a></h4>
+              <p>Web API with Entity Framework, AutoMapper, Autofac and dependency injection.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-red">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -525,105 +562,133 @@
                     d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
                   </path>
                 </svg>
-                <i class="bx bx-data"></i>
+                <i class="bx bxl-angular"></i>
               </div>
-              <h4><a href="https://github.com/Amitpnk/militaryapp-entityframeworkcore">Entity framework core</a></h4>
-              <p>Step by step tutorials creating Entity framework core</p>
+              <span class="box-tag">Tutorial</span>
+              <h4><a href="https://github.com/Amitpnk/angular-tutorial">Angular</a></h4>
+              <p>Step-by-step Angular application, built lab by lab.</p>
             </div>
           </div>
-          
-          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
-                  </path>
-                </svg>
-                <i class="bx bx-arch"></i>
-              </div>
-              <h4><a href="https://github.com/Amitpnk/Docker-K8s-Tutorial">Divera Don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div> -->
 
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section><!-- End Courses Section -->
 
-
-    <!-- ======= Blog Section ======= -->
+    <!-- ======= Blog & Projects Section ======= -->
     <section id="blog" class="resume">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Blog</h2>
-          <p>Software Architect | Full Stack .NET Developer | Cloud-Native Solutions, Microservices, ASP.NET Core, C#,
-            SQL Server, React, Web Components, Azure, DevOps, AI/ML, Design Patterns</p>
+          <h2>Blog &amp; Projects</h2>
+          <p>Articles and open-source starter kits. More on <a href="https://amit-naik.medium.com/" target="_blank"
+              rel="noopener">Medium</a>.</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-12">
-            <h3 class="resume-title">Article</h3>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Open source</h3>
             <div class="resume-item">
-              <h4>Onion architecture with ASP.NET Core API</h4>
-              <h5> <a href="https://github.com/Amitpnk/Onion-architecture-ASP.NET-Core-API">Github</a> </h5>
-              <p><em>Whiteapp for ASP.NET Core applicatin with Onion architecture</em></p>
-
+              <h4>Agentic AI starter kits</h4>
+              <h5><a href="https://github.com/Amitpnk/agentic-ai-starter-kits">GitHub</a></h5>
+              <p><em>Production-ready agent templates to start real projects from</em></p>
             </div>
             <div class="resume-item">
-              <h4>Replace Conditional Statements (IF/ELSE Or SWITCH) With Factory</h4>
-              <h5> <a
-                  href="https://www.c-sharpcorner.com/article/replace-conditional-statements-ifelse-or-switch-with-factory/">C-sharp
-                  corner</a> </h5>
-              <p><em>Replace Conditional Statements like IF/ELSE Or SWITCH case With Factory</em></p>
-
+              <h4>FastAPI starter guide</h4>
+              <h5><a href="https://github.com/Amitpnk/fastapi-starter-guide">GitHub</a></h5>
+              <p><em>Layered, feature-grouped FastAPI project with tests, managed with uv</em></p>
             </div>
             <div class="resume-item">
-              <h4>SOLID Principle</h4>
-              <h5> <a href="https://www.c-sharpcorner.com/article/solid-with-simple-example/">C-sharp corner</a> </h5>
-              <p><em>SOLID principle with a simple example</em></p>
-
+              <h4>Onion architecture with ASP.NET Core</h4>
+              <h5><a href="https://github.com/Amitpnk/Onion-architecture-ASP.NET-Core">GitHub</a></h5>
+              <p><em>White-app template for ASP.NET Core applications with Onion architecture</em></p>
             </div>
-
             <div class="resume-item">
-              <h4>AutoMapper In ASP.NET Core</h4>
-              <h5> <a href="https://www.c-sharpcorner.com/article/how-to-set-up-automapper-in-asp-net-core/">C-sharp
-                  corner</a> </h5>
-              <p><em>Integrating AutoMapper In ASP.NET Core</em></p>
-
-            </div>
-
-
-            <div class="resume-item">
-              <h4>AngularGrid with ASP.NET Web API</h4>
-              <h5> <a href="https://www.codeproject.com/Articles/1166288/AngularGrid-with-ASP-NET-Web-API"> Code
-                  Project</a></h5>
-              <p><em>Pagination (server side), Searching and Sorting for HTML table via Angularjs and retrieving data
-                  from Database via Web API</em></p>
-
+              <h4>System design</h4>
+              <h5><a href="https://github.com/Amitpnk/system-design">GitHub</a></h5>
+              <p><em>Worked real-world design problems for interviews and practice</em></p>
             </div>
           </div>
 
+          <div class="col-lg-6">
+            <h3 class="resume-title">Articles</h3>
+            <div class="resume-item">
+              <h4>Replace IF/ELSE or SWITCH with a Factory</h4>
+              <h5><a
+                  href="https://www.c-sharpcorner.com/article/replace-conditional-statements-ifelse-or-switch-with-factory/">C#
+                  Corner</a></h5>
+              <p><em>Replacing conditional statements with the factory pattern</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>SOLID Principles</h4>
+              <h5><a href="https://www.c-sharpcorner.com/article/solid-with-simple-example/">C# Corner</a></h5>
+              <p><em>SOLID principles with a simple example</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>AutoMapper in ASP.NET Core</h4>
+              <h5><a href="https://www.c-sharpcorner.com/article/how-to-set-up-automapper-in-asp-net-core/">C#
+                  Corner</a></h5>
+              <p><em>Integrating AutoMapper in ASP.NET Core</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>AngularGrid with ASP.NET Web API</h4>
+              <h5><a href="https://www.codeproject.com/Articles/1166288/AngularGrid-with-ASP-NET-Web-API">Code
+                  Project</a></h5>
+              <p><em>Server-side pagination, searching and sorting with AngularJS and Web API</em></p>
+            </div>
+          </div>
         </div>
 
       </div>
-    </section><!-- End blog Section -->
+    </section><!-- End Blog Section -->
 
+    <!-- ======= Beyond Code Section ======= -->
+    <section id="beyond" class="beyond section-bg">
+      <div class="container" data-aos="fade-up">
 
+        <div class="section-title">
+          <h2>Beyond Code</h2>
+          <p>Bikes, cycles and running: how I recharge. Activities synced from <a
+              href="https://www.strava.com/athletes/114731105" target="_blank" rel="noopener">Strava</a>.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <a href="cycling.html" class="beyond-card">
+              <div class="bg" style="background-image:url('assets/img/Slides/cycle-1.jpeg'); background-position:center 30%"></div>
+              <span class="go"><i class="bx bx-right-arrow-alt"></i></span>
+              <div class="content">
+                <h4><i class="bx bx-cycling"></i>Cycling</h4>
+                <p>Rides, routes and stats</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <a href="running.html" class="beyond-card">
+              <div class="bg" style="background-image:url('assets/img/Slides/pic-1.jpeg'); background-position:center 40%"></div>
+              <span class="go"><i class="bx bx-right-arrow-alt"></i></span>
+              <div class="content">
+                <h4><i class="bx bx-run"></i>Running</h4>
+                <p>Runs, races and stats</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Beyond Code Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Contact</h2>
+          <p>Mentoring, AI workshops for your team, or an architecture conversation</p>
         </div>
 
         <div class="row mt-1">
-
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-4">
             <div class="info">
               <div class="address">
                 <i class="icofont-google-map"></i>
@@ -631,65 +696,27 @@
                 <p>Bengaluru, India</p>
               </div>
             </div>
-
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-4">
             <div class="info">
               <div class="address">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>amit.naik8103@gmail.com</p>
+                <p><a href="mailto:amit.naik8103@gmail.com">amit.naik8103@gmail.com</a></p>
               </div>
             </div>
-
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-4">
             <div class="info">
               <div class="address">
                 <i class="icofont-link"></i>
-                <h4>Contact:</h4>
-                <p><a href="https://topmate.io/amitpnk" target="_blank">Reach me via Topmate</a></p>
+                <h4>1:1 sessions:</h4>
+                <p><a href="https://topmate.io/amitpnk" target="_blank" rel="noopener">Book via Topmate</a></p>
               </div>
             </div>
-
           </div>
-
-
-          <!-- <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                    data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div> -->
         </div>
 
       </div>
@@ -703,22 +730,23 @@
       <h3>Amit Naik</h3>
       <p>Be deserve before you desire</p>
       <div class="social-links">
-        <a href="https://github.com/Amitpnk" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:amit.naik8103@gmail.com" class="envelope"><i class="bx bxs-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/amitpnk/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://twitter.com/amitpnk" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <!-- <a href="https://www.facebook.com/profile.php?id=100074561137830" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-        <a href="skype:amit.naik8103?call" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://github.com/Amitpnk" class="github" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/amitpnk/" class="linkedin" aria-label="LinkedIn"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://amit-naik.medium.com/" class="medium" aria-label="Medium"><i class="bx bxl-medium"></i></a>
+        <a href="https://www.strava.com/athletes/114731105" class="strava" aria-label="Strava"><svg class="strava-svg"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+          </svg></a>
+        <a href="https://x.com/amitpnk" class="twitter" aria-label="X (Twitter)"><i class="bx bxl-twitter"></i></a>
+        <a href="mailto:amit.naik8103@gmail.com" class="envelope" aria-label="Email"><i
+            class="bx bxs-envelope"></i></a>
       </div>
-
       <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+        &copy; <span id="year">2026</span> Amit Naik
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
@@ -731,7 +759,6 @@
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
@@ -742,6 +769,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Hero slideshow -->
+  <script src="assets/js/slides.js"></script>
 
 </body>
 
