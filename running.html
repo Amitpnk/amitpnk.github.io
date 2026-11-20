@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Running · Amit Naik</title>
+  <meta name="description" content="Amit Naik's running: runs, races and stats from Strava.">
+  <meta property="og:title" content="Running · Amit Naik">
+  <meta property="og:image" content="https://amitpnk.github.io/assets/img/Slides/pic-1.jpeg">
+  <meta name="theme-color" content="#000000">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/dark.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="index.html#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="index.html#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="index.html#tutorial"><i class="bx bx-book-content"></i> <span>Courses</span></a></li>
+        <li><a href="cycling.html"><i class="bx bx-cycling"></i> <span>Cycling</span></a></li>
+        <li class="active"><a href="running.html"><i class="bx bx-run"></i> <span>Running</span></a></li>
+        <li><a href="index.html#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ======= Page hero ======= -->
+  <!-- To change the photo: put a picture in assets/img/Slides/ and update the url below -->
+  <div class="page-hero">
+    <div class="page-photo" style="background-image:url('assets/img/Slides/pic-1.jpeg'); background-position:center 40%"></div>
+    <div class="container" data-aos="fade-up">
+      <a href="index.html" class="back-link"><i class="bx bx-left-arrow-alt"></i> Back to home</a><br>
+      <span class="page-icon"><i class="bx bx-run"></i></span>
+      <h1>Running</h1>
+      <p>Early-morning runs, long runs and race days. Every run is logged on Strava.</p>
+      <a class="btn-strava" href="https://www.strava.com/athletes/114731105" target="_blank" rel="noopener">
+        <svg class="strava-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+        </svg>
+        Follow me on Strava</a>
+      <a class="btn-outline" href="cycling.html"><i class="bx bx-cycling"></i> Cycling</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Activities ======= -->
+    <div class="page-block">
+      <div class="container" data-aos="fade-up">
+        <h2 class="block-title"><i class="bx bx-trophy"></i> Featured runs</h2>
+        <p class="block-sub">Runs and races I'm proud of, straight from Strava.</p>
+
+        <div class="strava-grid" id="strava-activities"></div>
+
+        <div class="empty-card" id="strava-empty">
+          <svg class="strava-svg" viewBox="0 0 24 24" style="font-size:40px;color:#fc4c02;margin-bottom:12px"
+            aria-hidden="true">
+            <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+          </svg>
+          <h4>Runs coming soon</h4>
+          <p>Meanwhile, see all my activities on <a href="https://www.strava.com/athletes/114731105" target="_blank"
+              rel="noopener">Strava</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Why I run ======= -->
+    <div class="page-block alt">
+      <div class="container" data-aos="fade-up">
+        <h2 class="block-title"><i class="bx bx-heart"></i> Why I run</h2>
+        <p class="block-sub">Same lesson as engineering: small, consistent effort compounds.</p>
+        <div class="why-grid">
+          <div class="why-item"><i class="bx bx-brain"></i>
+            <h4>Clear head</h4>
+            <p>A quiet run before the day starts is where problems untangle themselves.</p>
+          </div>
+          <div class="why-item"><i class="bx bx-trending-up"></i>
+            <h4>Consistency</h4>
+            <p>Keep learning, keep growing. It applies to legs as much as to code.</p>
+          </div>
+          <div class="why-item"><i class="bx bx-map-alt"></i>
+            <h4>Exploring</h4>
+            <p>New routes, new races, and seeing a city on foot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Amit Naik</h3>
+      <p>Be deserve before you desire</p>
+      <div class="social-links">
+        <a href="https://github.com/Amitpnk" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/amitpnk/" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://amit-naik.medium.com/" aria-label="Medium"><i class="bx bxl-medium"></i></a>
+        <a href="https://www.strava.com/athletes/114731105" aria-label="Strava"><svg class="strava-svg"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+          </svg></a>
+        <a href="https://x.com/amitpnk" aria-label="X (Twitter)"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; <span id="year">2026</span> Amit Naik
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- =========================================================
+    YOUR RUNS: add Strava activity IDs here, newest first.
+    The ID is the number at the end of the activity link, e.g.
+    https://www.strava.com/activities/12345678901  ->  12345678901
+    Example:  window.STRAVA_ACTIVITIES = ['12345678901', '12345678902'];
+  ========================================================== -->
+  <script>
+    window.STRAVA_ACTIVITIES = [
+    ];
+  </script>
+  <script src="assets/js/strava.js"></script>
+
+</body>
+
+</html>
